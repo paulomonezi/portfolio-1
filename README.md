@@ -1,8 +1,8 @@
-# portfolio
+# Portfolio
 
 ## Icons
 
-:package: new feature
-:up: atualization
-:beetle: bug correction
-:checkered_flag: release
+- :package: new feature
+- :up: atualization
+- :bug: bug correction
+- :checkered_flag: release
