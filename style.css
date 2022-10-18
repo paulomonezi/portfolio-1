@@ -8,7 +8,7 @@
   --font-action: "Mulish", serif;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -16,7 +16,7 @@ html{
   width: 2rem;
   height: 2rem;
   position: fixed;
-  z-index: 100;
+  z-index: 151;
   right: 2rem;
   top: 2rem;
   display: flex;
