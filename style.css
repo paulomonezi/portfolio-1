@@ -480,3 +480,68 @@ header {
   height: 2rem;
   text-transform: uppercase;
 }
+
+.budget-section{
+  width: 100%;
+  height: 100vh;
+  background: url("/src/images/bg-budget.jpg");
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.budget-wrapper{
+  width: 60%;
+  height: 80%;
+  background-color: #ffffff99;
+  border-radius: 10px;
+  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.budget-section h1{
+  position: absolute;
+  top: -2.5rem;
+  left: 2rem;
+  background: -webkit-linear-gradient(to right, #6a3093, #a044ff);
+  background: linear-gradient(to right, #6a3093, #a044ff);
+  padding: 0 3rem;
+  color: #fff;
+  font-family: var(--font-primary);
+  font-size: 3rem;
+  font-weight: lighter;
+  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5); 
+  border-radius: 10px; 
+}
+
+.budget-section form{
+  margin: 4rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 2rem;
+  row-gap: 2rem;
+}
+
+.budget-section label{
+  font-family: var(--font-secondary);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.budget-section input[type="number"]{
+  font-family: var(--font-secondary);
+  width: 4rem;
+  font-size: 2rem;
+  outline: none;
+  border-radius: 10px;
+  border: none;
+  padding: 0.3rem;
+}
+
+.btn-budget{
+  text-transform: uppercase;
+  padding: 1rem;
+  cursor: pointer;
+  grid-column: 2;
+}
