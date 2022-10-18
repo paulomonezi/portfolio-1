@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" id="home">
         <div class="hamburguer">
             <div class="line" id="line1"></div>
             <div class="line" id="line2"></div>
@@ -39,11 +39,11 @@
         <aside class="sidebar">
             <nav>
                 <ul class="menu">
-                    <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Conhecimento</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Projetos</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Contatos</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Orçamento</a></li>
+                    <li class="menu-item"><a href="#home" class="menu-link">Home</a></li>
+                    <li class="menu-item"><a href="#skills" class="menu-link">Conhecimento</a></li>
+                    <li class="menu-item"><a href="#projects" class="menu-link">Projetos</a></li>
+                    <li class="menu-item"><a href="#contact" class="menu-link">Contatos</a></li>
+                    <li class="menu-item"><a href="#budget" class="menu-link">Orçamento</a></li>
                 </ul>
             </nav>
             <div class="social-media">
@@ -54,7 +54,7 @@
                 </div>
             </div>
         </aside>
-        <section class="skills-section">
+        <section class="skills-section" id="skills">
             <div class="section-header">
                 <h1>Skills</h1>
             </div>
@@ -136,7 +136,7 @@
             </div>
         </section>
 
-        <section class="projects-section">
+        <section class="projects-section" id="projects">
             <div class="section-header">
                 <h1>Projetos</h1>
             </div>
@@ -185,7 +185,7 @@
 
         </section>
 
-        <section class="contact-section">
+        <section class="contact-section" id="contact">
             <div class="contact-wrapper">
                 <div class="contact-left"></div>
                 <div class="contact-right">
@@ -208,7 +208,7 @@
                 </div>
             </div>
         </section>
-        <section class="budget-section">
+        <section class="budget-section" id="budget">
             <div class="budget-wrapper">
                 <h1>Faça um orçamento</h1>
                 <form>
@@ -233,6 +233,23 @@
                 </form>
             </div>
         </section>
+        <footer>
+            <div class="footer-content">
+                <p>
+                    Coded by Paulo Monezi
+                </p>
+                <div class="social-list">
+                    <ul>
+                        <li><a href=""><i class="fab fa-github"></i></a></li>
+                        <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href=""><i class="fab fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <a href="#home" id="arrow-home">
+            <i class="fas fa-arrow-up"></i>
+        </a>
     </div>
 </body>
 <script src="./scripts/script.js"></script>

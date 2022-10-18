@@ -8,6 +8,10 @@
   --font-action: "Mulish", serif;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 .hamburguer {
   width: 2rem;
   height: 2rem;
@@ -165,6 +169,7 @@ header {
   top: 0;
   right: -20rem;
   transition: all 1s;
+  z-index: 150;
 }
 
 .show-menu .sidebar {
@@ -365,7 +370,7 @@ header {
   margin-bottom: 2rem;
 }
 
-.btn{
+.btn {
   font-family: var(--font-action);
   background: -webkit-linear-gradient(to right, #6a3093, #a044ff);
   background: linear-gradient(to right, #6a3093, #a044ff);
@@ -407,18 +412,18 @@ header {
 
 .contact-left {
   width: 35%;
-  background:
-   linear-gradient(rgba(15, 15, 15, 0.6), rgba(22, 22, 22, 0.9)), url(/src/images/contact.jpg);
+  background: linear-gradient(rgba(15, 15, 15, 0.6), rgba(22, 22, 22, 0.9)),
+    url(/src/images/contact.jpg);
   background-size: cover;
 }
 
-.contact-right{
+.contact-right {
   width: 65%;
   background-color: #eee;
   padding: 1rem 3rem 3rem 3rem;
 }
 
-.contact-section h1{
+.contact-section h1 {
   font-family: var(--font-primary);
   color: #272727;
   text-align: center;
@@ -427,24 +432,24 @@ header {
   font-weight: lighter;
 }
 
-.contact-section form{
+.contact-section form {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.input-group{
+.input-group {
   position: relative;
 }
 
-.input-group textarea{
+.input-group textarea {
   padding-top: 1rem;
   max-width: 25rem;
   max-height: 5rem;
 }
 
-.field{
+.field {
   background: transparent;
   border: none;
   width: 20rem;
@@ -455,7 +460,7 @@ header {
   margin: 1rem 0;
 }
 
-.field-label{
+.field-label {
   position: absolute;
   left: 0;
   top: 2rem;
@@ -465,23 +470,23 @@ header {
   transition: all 0.3s;
 }
 
-.field:focus ~ label{
+.field:focus ~ label {
   top: 0;
   font-size: 1rem;
 }
 
-.field:focus{
+.field:focus {
   border-bottom: 1px solid;
 }
 
-.btn-submit{
+.btn-submit {
   font-size: 1.2rem;
   width: 100%;
   height: 2rem;
   text-transform: uppercase;
 }
 
-.budget-section{
+.budget-section {
   width: 100%;
   height: 100vh;
   background: url("/src/images/bg-budget.jpg");
@@ -491,7 +496,7 @@ header {
   justify-content: center;
 }
 
-.budget-wrapper{
+.budget-wrapper {
   width: 60%;
   height: 80%;
   background-color: #ffffff99;
@@ -500,7 +505,7 @@ header {
   position: relative;
 }
 
-.budget-section h1{
+.budget-section h1 {
   position: absolute;
   top: -2.5rem;
   left: 2rem;
@@ -511,11 +516,11 @@ header {
   font-family: var(--font-primary);
   font-size: 3rem;
   font-weight: lighter;
-  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5); 
-  border-radius: 10px; 
+  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
 }
 
-.budget-section form{
+.budget-section form {
   margin: 4rem;
   display: grid;
   grid-template-columns: auto 1fr;
@@ -523,13 +528,13 @@ header {
   row-gap: 2rem;
 }
 
-.budget-section label{
+.budget-section label {
   font-family: var(--font-secondary);
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-.budget-section input[type="number"]{
+.budget-section input[type="number"] {
   font-family: var(--font-secondary);
   width: 4rem;
   font-size: 2rem;
@@ -539,9 +544,55 @@ header {
   padding: 0.3rem;
 }
 
-.btn-budget{
+.btn-budget {
   text-transform: uppercase;
   padding: 1rem;
   cursor: pointer;
   grid-column: 2;
+}
+
+footer {
+  width: 100%;
+  height: 7rem;
+  background-color: #17181b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer-content p {
+  font-family: var(--font-secondary);
+  color: #a7a7a7;
+  font-size: 1.2rem;
+}
+
+.social-list a {
+  margin: 0 0.2rem;
+  color: #a7a7a7;
+  font-size: 1rem;
+}
+.social-list ul {
+  display: flex;
+}
+
+#arrow-home {
+  position: fixed;
+  right: 3rem;
+  bottom: 3rem;
+  width: 3rem;
+  height: 3rem;
+  background: -webkit-linear-gradient(to right, #6a3093, #a044ff);
+  background: linear-gradient(to right, #6a3093, #a044ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 0.3rem;
+  box-shadow: 0 0.1rem 0.6rem #00000099;
 }
