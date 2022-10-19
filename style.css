@@ -311,7 +311,7 @@ header {
   width: 100%;
 }
 
-.projects-section{
+.projects-section {
   width: 100%;
   height: 90vh;
 }
@@ -450,7 +450,8 @@ header {
   margin-bottom: 1.5rem;
 }
 
-.input-group input, .input-group textarea{
+.input-group input,
+.input-group textarea {
   font-size: 1.2rem;
   font-family: var(--font-action);
   font-weight: light;
@@ -500,25 +501,27 @@ header {
 }
 
 .budget-section {
+  text-transform: uppercase;
   width: 100%;
   height: 100vh;
-  background: url("src/images/bg-budget.jpg");
   object-fit: cover;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #fff;
 }
 
 .budget-wrapper {
-  width: 60%;
-  height: 80%;
-  background-color: #ffffff99;
+  width: 40%;
+  height: 55vh;
+  background-color: #eee;
   border-radius: 10px;
   box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
   position: relative;
 }
 
 .budget-section h1 {
+  text-transform: initial;
   position: absolute;
   top: -2.5rem;
   left: 2rem;
@@ -542,13 +545,14 @@ header {
 }
 
 .budget-section label {
-  font-family: var(--font-secondary);
+  font-family: var(--font-primary);
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 300;
 }
 
 .budget-section input[type="number"] {
-  font-family: var(--font-secondary);
+  font-family: var(--font-primary);
+  font-weight: 300;
   width: 4rem;
   font-size: 2rem;
   outline: none;
@@ -580,7 +584,7 @@ footer {
 }
 
 .footer-content p {
-  font-family: var(--font-secondary);
+  font-family: var(--font-primary);
   color: #a7a7a7;
   font-size: 1.2rem;
 }
