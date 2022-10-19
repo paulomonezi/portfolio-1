@@ -190,20 +190,26 @@
                 <div class="contact-left"></div>
                 <div class="contact-right">
                     <h1>Contato</h1>
-                    <form>
+                    <form action="https://api.staticforms.xyz/submit" method="post">
+                        <input type="hidden" name="accessKey" value="c2628cad-ef7b-41ff-99f5-93fc92f5657b">
                         <div class="input-group">
-                            <input type="text" class="field" id="name">
+                            <input type="text" name="name" class="field" id="name">
                             <label for="name" class="field-label">Nome</label>
                         </div>
                         <div class="input-group">
-                            <input type="text" class="field" id="email">
-                            <label for="email" class="field-label">E-mail</label>
+                            <input type="text" name="subject" class="field" id="subject">
+                            <label for="subject" class="field-label">Assunto</label>
                         </div>
                         <div class="input-group">
-                            <textarea class="field" id="message"></textarea>
+                            <input type="text" name="email" class="field" id="email">
+                            <label for="email" class="field-label" >E-mail</label>
+                        </div>
+                        <div class="input-group">
+                            <textarea class="field" name="message" id="message"></textarea>
                             <label for="message" class="field-label">Mensagem</label>
                         </div>
-                        <button type="submit" class="btn btn-submit">Enviar</button>
+                        <button type="submit" class="btn btn-submit" value="submit">Enviar</button>
+                        <input type="hidden" name="replyTo" value="paulo.monezi@icloud.com">
                     </form>
                 </div>
             </div>
@@ -228,7 +234,7 @@
                         </div>
                     </div>
                     <label for="deadline">Prazo</label>
-                    <input type="range" name="deadline" id="deadline" min="1" max="10">
+                    <input type="range" name="deadline" id="deadline" min="1" max="10" value="1">
                     <label id="price">R$ 0,00</label>
                     <button class="btn btn-budget" type="submit">Enviar</button>
                 </form>
