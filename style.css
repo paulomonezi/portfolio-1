@@ -502,7 +502,7 @@ header {
 .budget-section {
   width: 100%;
   height: 100vh;
-  background: url("/src/images/bg-budget.jpg");
+  background: url("src/images/bg-budget.jpg");
   object-fit: cover;
   display: flex;
   align-items: center;
