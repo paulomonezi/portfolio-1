@@ -2,53 +2,6 @@
 
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css");
 
-@media(max-width: 1200px){
-  .projects div{
-    width: 80%;
-    margin-left: 5%;
-  }
-}
-
-@media(max-width: 1024px){
-  .card div{
-    width: 70%;
-    font-size: 0.9rem;
-  }
-  .skills p{
-    font-size: 0.8rem;
-  }
-}
-
-@media(max-width: 768px){
-  body{
-    max-width: 768;
-  }
-}
-
-
-@media(max-width: 480px){
-  body{
-    max-width: 480px;
-  }
-.banner{
-  width: 30%;
-  visibility: hidden;
-}
-
-  .hamburguer{
-    position: absolute;
-    left: 5%;
-  }
-  #arrow-home{
-    position: fixed;
-    left: 70%;
-  }
-  .sidebar{
-    visibility: hidden;
-  }
-
-}
-
 :root {
   --font-primary: "Baloo Da 2", serif;
   --font-secondary: "Josefin Slab", serif;
@@ -433,6 +386,7 @@ header {
   border-radius: 0.5rem;
   border: none;
   box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.4);
+  cursor: pointer;
 }
 
 .card-info button {
@@ -605,12 +559,12 @@ header {
   position: relative;
 }
 
-.budget-section input[type="checkbox"]{
+.budget-section input[type="checkbox"] {
   position: absolute;
   left: -1.5rem;
 }
 
-.budget-section input[type="radio"]{
+.budget-section input[type="radio"] {
   position: absolute;
   left: -1.5rem;
 }
@@ -626,23 +580,23 @@ header {
   padding: 0.3rem;
 }
 
-.budget-section #deadline{
+.budget-section #deadline {
   -webkit-appearance: none;
   width: 60%;
   height: 15px;
-  border-radius: 15px;  
+  border-radius: 15px;
   background: #d3d3d3;
   outline: none;
   opacity: 0.7;
-  -webkit-transition: .2s;
-  transition: opacity .2s;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
 }
 .budget-section #deadline::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   width: 25px;
   height: 25px;
-  border-radius: 50%; 
+  border-radius: 50%;
   background: #6a3093;
   cursor: pointer;
 }
@@ -708,3 +662,142 @@ footer {
   box-shadow: 0 0.1rem 0.6rem #00000099;
 }
 
+@media (max-width: 1200px) {
+  .projects-section .card {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+  }
+  .budget-section h1 {
+    font-size: 1.8em;
+  }
+  .budget-section label,
+  .budget-section input {
+    font-size: 1.4rem;
+  }
+  .budget-wrapper {
+    width: 65%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .card div {
+    width: 70%;
+    font-size: 0.9rem;
+  }
+  .skills p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 880px) {
+  .budget-wrapper {
+    width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    max-width: 768px;
+  }
+  .skills {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+  .skill .skill-header {
+    justify-content: center;
+  }
+  .projects-section {
+    height: 180vh;
+  }
+
+  .projects-section .projects {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+
+  .projects-section .card {
+    width: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .contact-section {
+    background: url(/src/images/nubelson-fernandes--Xqckh_XVU4-unsplash.jpg);
+    background-size: cover;
+  }
+  .contact-section .contact-left {
+    visibility: hidden;
+    width: 1px;
+  }
+  .contact-section .contact-right {
+    width: 100%;
+  }
+  .budget-wrapper {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    max-width: 480px;
+  }
+  .banner {
+    width: 30%;
+  }
+
+  .hamburguer {
+    position: absolute;
+    left: 5%;
+  }
+  #arrow-home {
+    position: fixed;
+    left: 80%;
+  }
+  .contact-wrapper {
+    overflow: hidden;
+    position: relative;
+  }
+
+  .contact-right h1 {
+    position: absolute;
+    top: 0;
+    font-size: 2rem;
+  }
+  .contact-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .field {
+    border-bottom: 1px solid #000;
+    width: 100%;
+  }
+  .budget-wrapper {
+    width: 80%;
+  }
+  .budget-wrapper h1 {
+    max-width: 25rem;
+    padding: 0px;
+    margin: 0px;
+  }
+  .budget-wrapper label,
+  .budget-wrapper input {
+    font-size: 1.3rem;
+  }
+
+  .footer-content {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-content p {
+    font-size: 80%;
+  }
+
+  .footer-content .social-list li{
+    padding: 0 15px 0 15px;
+  }
+}
