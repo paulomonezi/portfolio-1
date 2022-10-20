@@ -220,23 +220,26 @@
                 <form>
                     <label for="pages">Quantidade de Páginas</label>
                     <input type="number" min="1" name="pages" id="pages">
-                    <label for="js">Preciso de script JS</label>
-                    <input type="checkbox" name="js" id="js">
+                    <label for="js">Preciso de script JS
+                        <input type="checkbox" name="js" id="js">
+                    </label>
+
                     <label>Layout</label>
                     <div class="group-layout">
                         <div>
-                            <input type="radio" name="layout" id="layout-yes">
-                            <label for="layout-yes">Preciso de um layout</label>
+
+                            <label for="layout-yes">Incluir no orçamento<input type="radio" name="layout"
+                                    id="layout-yes"></label>
                         </div>
                         <div>
-                            <input type="radio" name="layout" id="layout-no">
-                            <label for="layout-yes">Já tenho um layout</label>
+
+                            <label for="layout-yes">Já tenho um layout <input type="radio" name="layout"
+                                    id="layout-no"></label>
                         </div>
                     </div>
                     <label for="deadline">Prazo</label>
-                    <input type="range" name="deadline" id="deadline" min="1" max="10" value="1">
+                    <input type="range" name="deadline" id="deadline" min="1" max="10" value="5">
                     <label id="price">R$ 0,00</label>
-                    <button class="btn btn-budget" type="submit">Enviar</button>
                 </form>
             </div>
         </section>
@@ -264,4 +267,5 @@
     </div>
 </body>
 <script src="./scripts/script.js"></script>
+
 </html>

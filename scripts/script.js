@@ -13,7 +13,6 @@ document.querySelector("#deadline").addEventListener("change", () => {
     document.querySelector("label[for=deadline]").innerHTML = `Prazo: ${deadline} semanas`
     updatePrice()
 })
-
 function updatePrice() {
     const pages = document.querySelector("#pages").value
     const hasJS = document.querySelector("#js").checked
@@ -24,5 +23,5 @@ function updatePrice() {
     if (needLayout) price += 500
     let deadlineBudgetTax = 1 - deadline * 0.1;
     price *= 1 + deadlineBudgetTax
-    document.querySelector("#price").innerHTML = `R$ ${price.toFixed(2)}`
+    document.querySelector("#price").innerHTML = `R$ ${price.toFixed(2)}` 
 }
