@@ -423,7 +423,7 @@ header {
 .contact-left {
   width: 30%;
   background: linear-gradient(rgba(15, 15, 15, 0.3), rgba(22, 22, 22, 0.5)),
-    url(/src/images/nubelson-fernandes--Xqckh_XVU4-unsplash.jpg);
+    url(src/images/nubelson-fernandes--Xqckh_XVU4-unsplash.jpg);
   background-size: cover;
 }
 
@@ -724,8 +724,8 @@ footer {
     justify-content: center;
   }
   .contact-section {
-    /* background: url(/src/images/nubelson-fernandes--Xqckh_XVU4-unsplash.jpg);
-    background-size: cover; */
+    background: url(src/images/nubelson-fernandes--Xqckh_XVU4-unsplash.jpg);
+    background-size: cover;
   }
   .contact-section .contact-left {
     visibility: hidden;
