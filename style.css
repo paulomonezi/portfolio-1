@@ -709,7 +709,8 @@ footer {
     justify-content: center;
   }
   .projects-section {
-    height: 180vh;
+    height: 100%;
+    margin-bottom: 20px;
   }
 
   .projects-section .projects {
