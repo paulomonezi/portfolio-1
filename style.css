@@ -2,6 +2,53 @@
 
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css");
 
+@media(max-width: 1200px){
+  .projects div{
+    width: 80%;
+    margin-left: 5%;
+  }
+}
+
+@media(max-width: 1024px){
+  .card div{
+    width: 70%;
+    font-size: 0.9rem;
+  }
+  .skills p{
+    font-size: 0.8rem;
+  }
+}
+
+@media(max-width: 768px){
+  body{
+    max-width: 768;
+  }
+}
+
+
+@media(max-width: 480px){
+  body{
+    max-width: 480px;
+  }
+.banner{
+  width: 30%;
+  visibility: hidden;
+}
+
+  .hamburguer{
+    position: absolute;
+    left: 5%;
+  }
+  #arrow-home{
+    position: fixed;
+    left: 70%;
+  }
+  .sidebar{
+    visibility: hidden;
+  }
+
+}
+
 :root {
   --font-primary: "Baloo Da 2", serif;
   --font-secondary: "Josefin Slab", serif;
@@ -572,11 +619,40 @@ header {
   font-family: var(--font-primary);
   font-weight: 300;
   width: 4rem;
-  font-size: 2rem;
+  font-size: 1.3rem;
   outline: none;
   border-radius: 10px;
   border: none;
   padding: 0.3rem;
+}
+
+.budget-section #deadline{
+  -webkit-appearance: none;
+  width: 60%;
+  height: 15px;
+  border-radius: 15px;  
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+.budget-section #deadline::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%; 
+  background: #6a3093;
+  cursor: pointer;
+}
+
+.budget-section #deadline::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #6a3093;
+  cursor: pointer;
 }
 
 .btn-budget {
@@ -631,3 +707,4 @@ footer {
   border-radius: 0.3rem;
   box-shadow: 0 0.1rem 0.6rem #00000099;
 }
+
