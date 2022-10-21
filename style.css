@@ -758,16 +758,15 @@ footer {
   }
   .contact-wrapper {
     overflow: hidden;
-    position: relative;
   }
 
   .contact-right h1 {
-    position: absolute;
-    top: 0;
     font-size: 2rem;
+    margin-bottom: 2rem;
   }
   .contact-right {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
   }
@@ -801,4 +800,13 @@ footer {
   .footer-content .social-list li{
     padding: 0 15px 0 15px;
   }
+  .banner h1{
+    display: inline-block;
+    font-size: 3rem;
+  }
+  .banner p{
+    width: 300px;
+    display: inline-block;
+  }
 }
+
