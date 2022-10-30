@@ -197,8 +197,6 @@ header {
   transition: color 1s;
 }
 
-/* to-do */
-
 .menu-link:hover {
   color: #a044ff;
 }
@@ -389,6 +387,9 @@ header {
   cursor: pointer;
 }
 
+.btn a{
+  color: #FFF;
+}
 .card-info button {
   width: 8rem;
   height: 2.5rem;
@@ -436,7 +437,7 @@ header {
 .contact-section h1 {
   font-family: var(--font-primary);
   color: #272727;
-  text-align: center;
+  text-align: start;
   width: 100%;
   font-size: 3rem;
   font-weight: lighter;
