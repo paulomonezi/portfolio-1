@@ -363,6 +363,7 @@ header {
 
 .card-info h3 {
   font-family: var(--font-secondary);
+  font-size: 1.5rem;
   font-weight: bolder;
   color: #ff4081;
   margin-bottom: 1.5rem;
@@ -370,6 +371,7 @@ header {
 
 .card-info p {
   font-family: var(--font-secondary);
+  font-size: 1.2rem;
   color: #eee;
   font-weight: 400;
   width: 80%;
@@ -403,6 +405,12 @@ header {
   bottom: 2rem;
   opacity: 1;
   visibility: visible;
+}
+
+.projects-footer{
+  font-family: var(--font-primary);
+  text-align: center;
+  margin-top: 5%;
 }
 
 .contact-section {

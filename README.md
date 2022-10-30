@@ -3,7 +3,7 @@
 ## Icons
 
 - :package: new feature
-- :up: atualization
+- :up: update
 - :bug: bug correction
 - :checkered_flag: release
 
