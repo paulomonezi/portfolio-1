@@ -437,7 +437,7 @@ header {
 .contact-section h1 {
   font-family: var(--font-primary);
   color: #272727;
-  text-align: start;
+  text-align: center;
   width: 100%;
   font-size: 3rem;
   font-weight: lighter;
@@ -498,7 +498,7 @@ header {
 }
 
 .btn-submit {
-  margin-top: 4rem;
+  /* margin-top: 4rem; */
   font-size: 1.2rem;
   width: 40%;
   height: 2rem;
@@ -763,7 +763,7 @@ footer {
 
   .contact-right h1 {
     font-size: 2rem;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
   }
   .contact-right {
     display: flex;
