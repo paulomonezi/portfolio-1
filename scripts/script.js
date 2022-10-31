@@ -4,12 +4,18 @@ document.querySelector(".hamburguer")
             .classList.toggle("show-menu")
     })
 
+
 document.querySelector("#pages").addEventListener("change", updatePrice)
 document.querySelector("#js").addEventListener("change", updatePrice)
 document.querySelector("#layout-yes").addEventListener("change", updatePrice)
 document.querySelector("#layout-no").addEventListener("change", updatePrice)
 document.querySelector("#deadline").addEventListener("change", () => {
     const deadline = document.querySelector("#deadline").value
+    if (deadline == 1) {
+        document.querySelector("label[for=deadline]").innerHTML = `Prazo: ${deadline} semana`
+        updatePrice()
+        return
+    }
     document.querySelector("label[for=deadline]").innerHTML = `Prazo: ${deadline} semanas`
     updatePrice()
 })
@@ -23,5 +29,5 @@ function updatePrice() {
     if (needLayout) price += 500
     let deadlineBudgetTax = 1 - deadline * 0.1;
     price *= 1 + deadlineBudgetTax
-    document.querySelector("#price").innerHTML = `R$ ${price.toFixed(2)}` 
+    document.querySelector("#price").innerHTML = `R$ ${price.toFixed(2)}`
 }

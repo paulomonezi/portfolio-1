@@ -522,7 +522,7 @@ header {
 }
 
 .btn-submit {
-  /* margin-top: 4rem; */
+  margin-top: -2rem;
   font-size: 1.2rem;
   width: 40%;
   height: 2rem;
@@ -738,8 +738,10 @@ footer {
     flex-direction: column;
     row-gap: 1rem;
   }
+
   .skill .skill-header {
     justify-content: center;
+    flex-direction: column;
   }
   .projects-section {
     height: 100%;
