@@ -161,10 +161,12 @@ header {
   inline-size: 550px;
   overflow-wrap: break-word;
   position: relative;
-  top: 50px;
+  top: 15px;
   right: 50px;
   border-radius: 10px;
   padding: 10px;
+  opacity: 0;
+  animation: moveBanner 1s 1s forwards;
 }
 
 .about-text {
