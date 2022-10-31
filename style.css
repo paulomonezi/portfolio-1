@@ -154,6 +154,24 @@ header {
   animation: moveBanner 1s 0.9s forwards;
 }
 
+.about-container {
+  width: 550px;
+  height: 180px;
+  background-color: rgba(255, 255, 255, 0.6);
+  inline-size: 550px;
+  overflow-wrap: break-word;
+  position: relative;
+  top: 50px;
+  right: 50px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.about-text {
+  padding: 5px;
+  font-family: var(--font-primary);
+}
+
 @keyframes moveBanner {
   0% {
     transform: translateY(10rem) rotateY(-30deg);
@@ -718,7 +736,7 @@ footer {
 }
 
 @media (max-width: 980px) {
-  .card{
+  .card {
     width: 250px;
   }
 }
@@ -773,6 +791,10 @@ footer {
   }
   .budget-wrapper {
     width: 80%;
+  }
+  .about-container{
+    width: 400px;
+    height: 230px;
   }
 }
 
