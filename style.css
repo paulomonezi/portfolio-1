@@ -82,7 +82,7 @@ html {
 }
 header {
   width: 100%;
-  height: 90vh;
+  height: 98vh;
   overflow: hidden;
   position: relative;
 }
@@ -793,8 +793,10 @@ footer {
     width: 80%;
   }
   .about-container{
-    width: 400px;
-    height: 230px;
+    width: 375px;
+    height: 235px;
+    inline-size: 375px;
+    overflow-wrap: break-word;
   }
 }
 
