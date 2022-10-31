@@ -111,6 +111,10 @@ header {
   }
 }
 
+.thank-you{
+  height: 100vh;
+}
+
 .banner {
   position: absolute;
   top: 30%;
