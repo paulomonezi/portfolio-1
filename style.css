@@ -8,7 +8,7 @@
   --font-action: "Mulish", serif;
 }
 
-html {
+body {
   scroll-behavior: smooth;
 }
 
@@ -111,7 +111,7 @@ header {
   }
 }
 
-.thank-you{
+.thank-you {
   height: 100vh;
 }
 
@@ -798,7 +798,7 @@ footer {
   .budget-wrapper {
     width: 80%;
   }
-  .about-container{
+  .about-container {
     width: 375px;
     height: 235px;
     inline-size: 375px;
